@@ -623,12 +623,28 @@ video {
   width: 30vw;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
+}
+
+.w-\[40vw\] {
+  width: 40vw;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
 .max-w-\[45vw\] {
   max-width: 45vw;
+}
+
+.max-w-\[50vw\] {
+  max-width: 50vw;
 }
 
 .items-center {
@@ -645,6 +661,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-2 {
@@ -681,6 +701,11 @@ video {
   background-color: rgb(224 231 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity, 1));
+}
+
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity, 1));
@@ -694,6 +719,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-indigo-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 180 252 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\/src\/assets\/images\/hero-home\.jpg\'\)\] {
@@ -802,6 +832,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -833,6 +867,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-medium {
