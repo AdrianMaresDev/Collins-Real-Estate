@@ -554,6 +554,34 @@ video {
   display: none;
 }
 
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  transform-origin: bottom right;
+  --tw-scale-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 48 163 / var(--tw-bg-opacity, 1));
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.underline-animation:hover::after {
+  transform-origin: bottom left;
+  --tw-scale-x: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .absolute {
   position: absolute;
 }
@@ -575,10 +603,6 @@ video {
   margin-right: auto;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .flex {
   display: flex;
 }
@@ -591,28 +615,12 @@ video {
   max-height: 3.5rem;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
-.w-\[90vw\] {
-  width: 90vw;
-}
-
-.w-\[50vw\] {
-  width: 50vw;
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[30vw\] {
   width: 30vw;
-}
-
-.w-\[40vw\] {
-  width: 40vw;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .max-w-7xl {
@@ -621,14 +629,6 @@ video {
 
 .max-w-\[45vw\] {
   max-width: 45vw;
-}
-
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
-.max-w-\[90vw\] {
-  max-width: 90vw;
 }
 
 .items-center {
@@ -786,6 +786,10 @@ video {
   padding-left: 5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -798,20 +802,8 @@ video {
   padding-top: 1.5rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.font-custom {
-  font-family: Montserrat, sans-serif;
 }
 
 .font-poppins {
