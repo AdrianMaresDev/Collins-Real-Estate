@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["Montserrat", "sans-serif"]
+        custom: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"]
       },
       colors: {
         "off-white": "#F5F4F2",
